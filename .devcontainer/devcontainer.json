@@ -1,6 +1,6 @@
 // https://aka.ms/devcontainer.json
 {
-	"name": "Existing Docker Compose (Extend)",
+	"name": "Gov-br",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
