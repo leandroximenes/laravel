@@ -1,11 +1,12 @@
 // https://aka.ms/devcontainer.json
 {
-	"name": "Existing Docker Compose (Extend)",
+	"name": "my-Laravel",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
 	"service": "laravel.test",
 	"workspaceFolder": "/var/www/html",
+	"initializeCommand": "bash -c '[[ $(docker ps -aq) ]] && docker stop $(docker ps -aq) && docker rm $(docker ps -aq) || echo \"No conteiner running\"'",
 	"customizations": {
 		"vscode": {
 			"extensions": [
