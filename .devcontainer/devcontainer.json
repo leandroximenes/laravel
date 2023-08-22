@@ -1,6 +1,6 @@
 // https://aka.ms/devcontainer.json
 {
-	"name": "Gov-br",
+	"name": "my-Laravel",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
